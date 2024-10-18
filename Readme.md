@@ -1,8 +1,8 @@
-# AI Image Generator in React Native-EXPO
+# AI Image Generator in React Native-Expo
 
 ## Description
 
-This is an AI Image Generator app built using React Native-EXPO. The app allows users to generate AI images based on their input and includes several key features to enhance user experience:
+This is an AI Image Generator app built using React Native-Expo. The app allows users to generate AI images based on their input and includes several key features to enhance user experience:
 
 - Generate images in the most preferred sizes for various use cases.
 - Download the generated images to the device's local storage.
@@ -42,7 +42,7 @@ The app utilizes a powerful AI image generation API, which allows users to creat
 
 ## Preview
 
-![](/assets/G_AI-Img_Generator.gif)
+![](assets/G_AI-Img_Generator.gif)
 
 ## API
 
