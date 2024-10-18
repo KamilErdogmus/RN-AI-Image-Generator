@@ -42,7 +42,7 @@ The app utilizes a powerful AI image generation API, which allows users to creat
 
 ## Preview
 
-![](assets/G_AI-Img_Generator.gif)
+<img src="assets/G_AI-Img_Generator.gif" height="600" />
 
 ## API
 
