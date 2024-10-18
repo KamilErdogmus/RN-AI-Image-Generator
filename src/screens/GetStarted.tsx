@@ -18,6 +18,7 @@ import Animated, {
   withTiming,
   useAnimatedStyle,
 } from "react-native-reanimated";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const GetStarted = () => {
   const navigation = useNavigation<NavigationProps>();
@@ -67,7 +68,7 @@ const GetStarted = () => {
           text: "OK",
           onPress: async () => {
             try {
-              await removeItem("onboarded");
+              await AsyncStorage.clear();
               navigation.push("Onboarding");
             } catch (error) {
               console.error("Error resetting cache:", error);
