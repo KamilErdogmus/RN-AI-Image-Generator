@@ -11,7 +11,7 @@ import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { getItem } from "../utils/asyncstorage";
 import { LinearGradient } from "expo-linear-gradient";
-import { Ionicons } from "@expo/vector-icons";
+import { AntDesign, Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import uuid from "react-native-uuid";
@@ -72,15 +72,21 @@ const LibraryScreen = () => {
       <SafeAreaView className="flex-1">
         <View className="flex-row mx-4 justify-between items-center">
           <Pressable
+            onPress={() => navigation.goBack()}
+            className="p-2 border rounded-full"
+          >
+            <AntDesign name="arrowleft" size={27} color={"#5356FF"} />
+          </Pressable>
+
+          <Text className="text-xl font-bold text-black mr-10">
+            My Creations
+          </Text>
+          <Pressable
             onPress={() => navigation.navigate("Home")}
             className="p-2"
           >
             <Ionicons name="home-sharp" size={27} color={"#090909"} />
           </Pressable>
-          <Text className="text-xl font-bold text-black mr-10">
-            My Creations
-          </Text>
-          <View />
         </View>
         {images.length == 0 ? (
           <View className="flex-1 justify-center items-center">

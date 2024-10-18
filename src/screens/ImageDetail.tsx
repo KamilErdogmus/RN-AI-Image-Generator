@@ -207,7 +207,7 @@ const ImageDetail = () => {
 
         Toast.show({
           type: "info",
-          text1: "Image has been deleted!",
+          text1: "The image has been deleted from your creations.",
         });
       }
     }
@@ -392,7 +392,7 @@ const controllersData = [
   },
   {
     id: 2,
-    icon: () => <Ionicons name="trash-outline" size={28} color={"#adadad"} />,
+    icon: () => <Ionicons name="trash-outline" size={28} color="red" />,
   },
   {
     id: 3,
